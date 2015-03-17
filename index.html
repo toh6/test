@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Many Sounds of Texas</title>
+
+    <style>
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+  background-color:black;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+p.intro {
+  font-size: 100%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img.banner {
+  position: absolute;
+  width:1000px;
+  transform:none;
+  padding:none;
+  border-radius:none;
+  background:none;
+  box-shadow:none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 15%;
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("11.png");
+   background-attachment: fixed;  
+}
+
+#slide1:before {
+  background-image: url("23.png");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide2 {
+  background-image: url("66.png");
+  background-attachment: fixed;
+}
+
+#slide3:before {
+  background-image: url("44.png");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background-image: url("55.png");
+  background-attachment: fixed;
+}
+
+#slide5 {
+  background-image: url("33.png");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}  
+
+#slide6 {
+  background-image: url("55.png");
+  background-attachment: fixed; 
+}  
+
+#slide9 {
+  background: #222;
+}
+</style>
+
+    <script src="js/prefixfree.min.js"></script>
+<link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+        
+    <link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+    
+    <link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+        
+    <link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+    
+   <!--slideshow starts here--!>
+   
+  <script language="JavaScript1.1">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>  
+    
+    
+       
+</head>
+
+
+<body>
+
+  <div id="title" class="slide header">
+  <img class="banner" src="banner.png">
+</div>
+
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>This Project..</h1>
+    <p class="intro">When people think of Texas music the first thought that comes to mind is country. However, there is not one, two or three genres of music, which could describe the state. Texas is the birthplace of <span class="soundcite" data-url="http://thomhodge.com/final/john.mp3" data-start="0" data-end="45000">Western Swing</span> and Tex-Mex. Texas Historical Association says the state's music is also influenced by Czech and German settlers. We thought what better way to understand the kinds of music coming out of Texas, than by looking at artists who are playing in Austin. We looked at Spotify's API to understand how Texas artists compare to other artists in the U.S. We wanted to know whether their popularity reached beyond the state's border. 
+
+We also went to performances in Austin to capture some of the city's <span class="soundcite" data-url="http://thomhodge.com/final/h.mp3" data-start="6000" data-end="50000">live music scene.</span> Here is a <a href="http://www.youtube.com/channel/UC3cLxPI1Xo-MpTNIx3mSb4A/videos">link</a> to performances we saw in Austin.
+<br>
+<br>
+We interviewed artists and asked them what would they describe as their sound. Even though each artists' style was different from one another, they all said growing up in Austin or in West Texas influenced their music. This is where they found inspiration, soul and self-expression. We hope you learn a little bit more about Texas music. Enjoy.
+<br> 
+<br>
+<center>
+<iframe width="400" height="350" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col1%2C+col2%2C+col3+from+1S4GGYk_5BLlgz2So_BU442_fRT6z0wGmXWSp2mK5+where+col1+in+(&#39;Bun+B&#39;%2C+&#39;Duelo&#39;%2C+&#39;Intocable&#39;%2C+&#39;Josh+Abbott+Band&#39;%2C+&#39;Lil%5C&#39;+KeKe&#39;%2C+&#39;Paul+Wall&#39;%2C+&#39;Pimp+C&#39;%2C+&#39;Randy+Rogers+Band&#39;%2C+&#39;Robert+Earl+Keen&#39;%2C+&#39;Selena&#39;%2C+&#39;Slim+Thug&#39;%2C+&#39;Z-Ro&#39;)+order+by+col3+desc+limit+15&amp;viz=GVIZ&amp;t=LINE&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3Anull%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_booleanRole=certainty&amp;gco_lineWidth=2&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22slantedText%22%3Atrue%2C+%22slantedTextAngle%22%3A60%2C+%22title%22%3A%22%22%7D&amp;gco_legend=in&amp;gco_backgroundColor=%7B%22fill%22%3A%22%23cccccc%22%7D&amp;gco_curveType=&amp;gco_interpolateNulls=false&amp;gco_focusTarget=category&amp;gco_series=%7B%220%22%3A%7B%22pointSize%22%3A7%2C+%22color%22%3A%22%2300ff00%22%7D%2C+%221%22%3A%7B%22pointSize%22%3A7%2C+%22color%22%3A%22%23000000%22%7D%7D&amp;gco_title=Artists+ranked+in+Texas+vs+United+States&amp;width=400&amp;height=350"></iframe>
+</center>
+<br>
+We were able to gather information from Spotify’s API to to show listeneners' preferences from about a quarter million listeners that have a zip code associated with their Spotify account. We compared the regions by looking for the most popular artists based upon listener plays in each region. We looked for artists that have a substantial change in rank between the two regions.
+
+We compared Texas to the United States and found the top 500 artists listened to in Texas and saw which artists fell the furthest on the United States chart. Of the 500 artists, we found the top 25 artists and of those we graphed the top 12 Texas artists. We wanted to show how popular Texas artists are in the United States and what kinds of Texas music is heard throughout the country. 
+<br>
+<br>
+<center>
+<table style="width:300px height:280px">
+  <tr>
+    <th>#</th>
+    <th>Artists</th>
+    <th>Rank in Texas</th>
+    <th>Rank in U.S.A.</th>
+    <th>Delta</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Randy Rogers Band</td>		
+    <td>369</td>
+    <td>3438</td>
+    <td>-3069</td>		
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Lil' KeKe</td>		
+    <td>422</td>
+    <td>3203</td>
+    <td>-2781</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Josh Abbott Band</td>		
+    <td>251</td>
+    <td>3041</td>
+    <td>-2790</td>
+  </tr>
+    <tr>
+    <td>4</td>
+    <td>Robert Earl Keen</td>		
+    <td>398</td>
+    <td>2196</td>
+    <td>-1798</td>		
+    
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Selena</td>		
+    <td>475</td>
+    <td>2029</td>
+    <td>-1554</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Duelo</td>		
+    <td>173</td>
+    <td>1738</td>
+    <td>-1565</td>
+  </tr>
+    <tr>
+    <td>7</td>
+    <td>Pimp C</td>		
+    <td>54</td>
+    <td>1612</td>
+    <td>-1258</td>		
+    
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Intocable</td>		
+    <td>141</td>
+    <td>1560</td>
+    <td>-1419</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Z-Ro</td>		
+    <td>87</td>
+    <td>1528</td>
+    <td>-1441</td>
+  </tr>
+    <tr>
+    <td>10</td>
+    <td>Paul Wall</td>		
+    <td>436</td>
+    <td>1477</td>
+    <td>-1041</td>		
+    
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Slim Thug</td>		
+    <td>228</td>
+    <td>1350</td>
+    <td>-1122</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Bun B</td>		
+    <td>325</td>
+    <td>1115</td>
+    <td>-790</td>
+  </tr>
+</table>
+</center>
+	</p>
+</div>
+</div>
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1> A Night Out In Austin</h1>
+    <p class="intro"> <a href="javascript:gotoshow()"><img src="food1.jpg" name="slide" border=0 width=300 height=375></a>
+    This slideshow is a glimpse into some of Austin's music venues. We took photos of people and artists having a good time.  
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("s1.jpg","s2.jpg","s3.jpg","s4.jpg","s5.jpg","s6.jpg","s7.jpg","s8.jpg")
+
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=2000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+</script>
+<p align="center"><font face="arial" size="-2"></font><br>
+<font face="arial, helvetica" size="-2"><a href="">
+</a></font></p></p>
+</div>
+</div>
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>Malford Milligan</h1>
+    <p class="intro">Malford Milligan, 55, is originally from Lubbock, Texas. He started singing when he was about 28. His family followed cotton from southern Texas up to west Texas. 
+"I was beyond dirt poor. I didn't have lights until I was six," he said. 
+Milligan said coming from Central Texas has definitely influenced his voice. He sings different styles of blues, soul and rock.  
+He draws a lot of his inspiration from Otis Redding, a soul, rhythm and blues singer-songwriter, who is also from the country.  
+"He wasn't a pretty singer; he just came out and grabbed you, but he always had so much soul," Milligan said. 
+Milligan said being from Central Texas, chopping cotton and working hard has shaped his music. 
+<br>
+Milligan said he wouldn't describe himself in a specific genre. 
+"I'm just an <span class="soundcite" data-url="http://thomhodge.com/final/m.mp3" data-start="0" data-end="45000">old gravelly singer</span> right now," he said.
+<br>
+<br>
+ <center><iframe width="350" height="300" src="//www.youtube.com/embed/vqNjSgaGoUU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>
+ 
+ </p>
+  </div>
+
+</div>
+
+<div id="slide4" class="slide">
+    <div class="title">
+    <h1>Other Lovers</h1>
+    <p class="intro">
+    Lead singer Megan Fowler, 24, captures the audience with her sass and bluesy rock-n-roll voice. 
+Fowler works at a pizza parlor to pay the bills, but she's an Austin artist.
+Fowler said it would be hard to describe the band's sound. 
+"It's blues and rock-n-roll without it being country rock," she said. 
+The five members who are all from Austin started the band three years ago. 
+"Everyone in this town is in a band or plays an instrument. You have to bring your own shit to the table," Fowler said. 
+<br>
+<br>
+<h1>Boomswagglers</h1>
+<img src="other.jpg">
+Spencer Alvis Cornett, 26, from Round Rock, Texas, described his music as very stripped down country with a little bit of blues. 
+Cornett lives in the woods in an RV, to keep true to his authentic country sound. 
+"I write more than I can think," Cornett said. 
+Cornett, who started school in the fifth grade and dropped out by ninth grade, said growing up in Round Rock did inspire his style of <span class="soundcite" data-url="http://thomhodge.com/final/swing.mp3" data-start="0" data-end="59000">gritty county music.</span> Also being raised by a single mom with seven siblings and going in and out of jail did inspire his writing.
+Cornett started Boomswagglers seven years ago and writes all the band's original music. The Boomswagglers were nominated for an Independent Music Award for best song in alternative country. 
+"He's the real deal," Boomswagglers guitarist Kyle Coroneos said.
+
+</p>
+    </div>
+</div>
+</body>
+
+</html>
